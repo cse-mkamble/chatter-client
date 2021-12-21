@@ -1,0 +1,9 @@
+npm install @mdi/font --save
+npm install @react-hook/mouse-position --save
+npm install animate.css --save
+npm install classnames --save
+npm install sass --save
+npm install socket.io-client --save
+npm install use-sound --save
+
+npm install socket.io-client --save
