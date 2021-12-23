@@ -2,6 +2,7 @@
   "name": "chatter-client",
   "version": "0.1.0",
   "private": true,
+  "proxy": "https://botty.alexgurr.com",
   "dependencies": {
     "@mdi/font": "^6.5.95",
     "@react-hook/mouse-position": "^4.1.3",
