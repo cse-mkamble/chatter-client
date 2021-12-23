@@ -38,15 +38,13 @@ function Messages() {
     };
     setMessageList((list) => [...list, messageObject]);
     setNextMessages(NextMessageObject);
+    playReceive();
     setMessage("");
   }, []);
 
   useEffect(() => {
 
     socket.on("bot-message", (message) => {
-      console.log("here");
-      console.log(message);
-
       const messageObject = {
         user: 'other',
         message: message,
@@ -57,7 +55,7 @@ function Messages() {
       };
       setMessageList((list) => [...list, messageObject]);
       setNextMessages(NextMessageObject);
-      console.log(messages);
+      playReceive();
     });
 
   }, []);
@@ -79,6 +77,7 @@ function Messages() {
     setMessageList((list) => [...list, messageObject]);
     setNextMessages(NextMessageObject);
     setMessage("");
+    playSend();
   }
 
   return (
